@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+:root {
+    --cor-primaria: white;
+    --cor-secundaria: black;
+    --fonte-primaria: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Poppins', sans-serif;
+}
+
+/* body {
+    background-color: var(--cor-primaria);
+} */
+body {
+    background: linear-gradient(210.67deg, #262626 5.01%, rgba(38, 38, 38, 0) 63.8%), #090909;
+
+}
+
+ main {
+    padding: 5rem;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap: 1.5rem;
+}
+
+.conteudo-principal-logo {
+    height: 17.5rem;
+}
+.conteudo-principal-titulo {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.conteudo-secundario-subtitulo {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.conteudo-secundario-redes {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.conteudo-secundario-redes-botao {
+    border: 0.15rem solid var(--cor-primaria);
+    border-radius: 0.5rem;
+    width: 18.75rem;
+    padding: 0.8rem;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+
+}
+
+.logo-redes {
+    height: 1.9rem;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.rodape-endereco {
+    font-weight: 400;
+    font-size: 1rem;
+
+
+}
+
+.rodape-maps {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: var(--cor-secundaria);
+    border-bottom: 0.001rem solid var(--cor-secundaria);
+
+}
+
+@media screen and (max-width: 768px) {
+
+    main {
+        padding: 2rem;
+        padding-top: 4rem;
+    }
+
+    .conteudo-principal {
+        padding-top: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .conteudo-principal-logo {
+        height: 9rem;
+    }
+    .conteudo-principal-titulo {
+        font-size: 0.825rem;
+    }
+
+    .conteudo-secundario {
+        padding: 0.1rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+    }
+    
+    .conteudo-secundario-subtitulo {
+        font-size: 0.55rem;
+        font-weight: 400;
+    }
+
+    .conteudo-secundario-redes {
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .conteudo-secundario-redes-botao {
+        border: 0.001rem solid var(--cor-primaria);
+        font-size: 0.6rem;
+        width: 20.5rem;
+        padding: 0.6rem;
+    }
+    
+    .logo-redes {
+        height: 0.8rem;
+    }
+
+
+    .rodape-endereco {
+        font-size: 0.6rem;
+    }
+
+    .rodape-maps {
+        font-size: 0.7rem;
+    }
+
+
+
+    
+}
