@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
 }
 
 :root {
@@ -21,7 +20,8 @@ body {
 }
 
  main {
-    padding: 5rem;
+    padding: 3rem;
+    padding-bottom: 4rem;
 }
 
 .conteudo-principal {
@@ -29,7 +29,7 @@ body {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+    padding: 3.5rem;
     gap: 1.5rem;
 }
 
@@ -64,7 +64,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 4rem;
+    padding: 2.5rem;
 }
 
 .conteudo-secundario-subtitulo {
@@ -106,30 +106,46 @@ body {
 }
 
 footer {
-    flex-shrink: 0;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     font-family: var(--fonte-primaria);
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rodape-mapa {
+    padding-top: 2rem;
+    max-width: 31.25rem;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.rodape-mapa-titulo {
+    padding-bottom: 0.5rem;
+}
+
+.rodape-mapa-googlemaps {
+    width: 100%;
+}
+
+.rodape-contato {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    gap: 1.5rem;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
-.rodape-endereco {
-    font-weight: 400;
-    font-size: 1rem;
-
-
+.rodape-contato-titulo {
+    padding-bottom: 1rem;
 }
 
-.rodape-maps {
-    font-weight: 700;
-    font-size: 0.8rem;
-    color: var(--cor-secundaria);
-    border-bottom: 0.001rem solid var(--cor-secundaria);
-
+.rodape-linha-divisora {
+    height: 8rem;
+    border-right: 0.01rem solid var(--cor-secundaria);   
 }
 
 @media screen and (max-width: 768px) {
@@ -137,11 +153,13 @@ footer {
     main {
         padding: 2rem;
         padding-top: 4rem;
+        padding-bottom: 1rem;
     }
 
     .conteudo-principal {
         padding-top: 1.5rem;
-        padding: 0.5rem;
+        padding: 0.25rem;
+        gap: 0.5rem;
     }
 
     .conteudo-principal-logo {
@@ -149,13 +167,13 @@ footer {
     }
     .conteudo-principal-titulo {
         font-size: 0.825rem;
+        padding: 0.5rem;
     }
 
     .conteudo-secundario {
         padding: 0.1rem;
         padding-top: 3rem;
         padding-bottom: 3rem;
-
     }
     
     .conteudo-secundario-subtitulo {
@@ -176,20 +194,46 @@ footer {
         padding: 0.6rem;
     }
     
+    .conteudo-secundario-redes-botao:hover {
+        border: 0.001rem solid var(--cor-primaria);
+    }
+    
     .logo-redes {
         height: 0.8rem;
     }
+    
+    footer {
+        flex-direction: column;
+    }
 
+    .rodape-contato {
+        padding-top: 2rem;
+        padding-bottom: 0.75rem;
+    }
 
-    .rodape-endereco {
+    .rodape-contato-titulo {
+        font-size: 0.8rem;
+    }
+
+    .rodape-contato-forma {
         font-size: 0.6rem;
     }
 
-    .rodape-maps {
-        font-size: 0.7rem;
+    .rodape-linha-divisora {
+        transform: rotate(90deg);
+        height: 5rem;
+        border-bottom: 0.001rem solid var(--cor-secundaria);
     }
 
+    .rodape-mapa {
+        padding-top: 0.75rem;
+    }
 
+    .rodape-mapa-titulo {
+        font-size: 0.8rem;
+    }
 
-    
+    .rodape-mapa-endereco {
+        font-size: 0.6rem;
+    }
 }
